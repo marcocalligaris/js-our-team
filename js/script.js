@@ -19,3 +19,14 @@ const teamMembers = [
 ]
 
 console.log(teamMembers);
+
+for (let i = 0; i < teamMembers.length; i++) {
+    const members = teamMembers[i];
+    console.log(members.firstName);
+    console.log(members.lastName);
+    console.log(members.role);
+    console.log(members.photo);
+}
+
+//* Milestone 2
+
