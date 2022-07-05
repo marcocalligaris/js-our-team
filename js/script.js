@@ -20,13 +20,16 @@ const teamMembers = [
 
 console.log(teamMembers);
 
-for (let i = 0; i < teamMembers.length; i++) {
-    const members = teamMembers[i];
-    console.log(members.firstName);
-    console.log(members.lastName);
-    console.log(members.role);
-    console.log(members.photo);
-}
-
 //* Milestone 2
 
+const membersList = document.getElementById('members');
+const memberCard = document.getElementById('member-card');
+
+for (let i = 0; i < teamMembers.length; i++) {
+    const member = teamMembers[i];
+    
+    for(let key in member) {
+        console.log(member[key]);
+        memberCard.innerText += (member[key]);
+    }
+}
